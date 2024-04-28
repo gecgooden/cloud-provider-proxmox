@@ -32,6 +32,7 @@ func newInstances(config proxmoxConfig) (cloudprovider.InstancesV2, error) {
 	if err != nil {
 		return nil, err
 	}
+	client.SetLogger(klog.Background())
 	return &instance{compute: client}, nil
 }
 

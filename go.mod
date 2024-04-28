@@ -1,5 +1,7 @@
 module github.com/k8s-proxmox/cloud-provider-proxmox
 
+replace github.com/k8s-proxmox/proxmox-go v0.0.0-alpha25 => github.com/gecgooden/proxmox-go v0.0.0-20240428080218-b90fb97b2d03
+
 go 1.20
 
 require (
